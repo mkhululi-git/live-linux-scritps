@@ -14,6 +14,8 @@ sudo systemctl start mysqld
 password=$(sudo grep 'temporary password' /var/log/mysqld.log | awk '{print $13}')
 mysqladmin --user=root --password="$password" password aaBB@@11
 
+git config --global user.email "33725297+mkhululiDev@users.noreply.github.com"
+git config --global user.name "Mkhululi"
 
 ###################################
 
